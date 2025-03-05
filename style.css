@@ -5,7 +5,7 @@ body {
 
 .sceneContainer {
     height: 100vh;
-    
+
 }
 
 .title {
@@ -466,7 +466,22 @@ main {
     }
 
     .links {
-        width: 25%;
+        width: 70%;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(1, auto);
+    }
+
+    .links>li {
+        grid-column: unset;
+
+    }
+
+    .links>li:nth-child(1),
+    .links>li:nth-child(2),
+    .links>li:nth-child(6),
+    .links>li:nth-child(7) {
+        grid-column: unset;
+        justify-self: unset;
     }
 }
 
@@ -477,4 +492,6 @@ main {
         grid-template-rows: repeat(2, auto);
         gap: 1rem;
     }
+
+
 }
