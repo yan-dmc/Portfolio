@@ -8,6 +8,9 @@ if (!WebGL.isWebGL2Available()) {
   throw new Error("WebGL2 não disponível.");
 }
 
+// Verifica se é um dispositivo móvel
+const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
 // Configuração da cena
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -16,7 +19,10 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+
+// Configuração do renderizador com otimizações para mobile
+const renderer = new THREE.WebGLRenderer({ antialias: !isMobile });
+renderer.setPixelRatio(isMobile ? 0.5 : window.devicePixelRatio);
 renderer.shadowMap.enabled = true; // Ativa sombras
 
 // Verifica se o contêiner existe antes de anexar o renderizador
