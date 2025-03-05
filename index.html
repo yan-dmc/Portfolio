@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfólio - Yan</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="projetos.css" />
+  </head>
+  <body>
+    <main>
+      <div class="sceneContainer">
+        <div class="animated-text">
+          <h1 class="title">_<span></span></h1> 
+        </div>
+        <div class="scene"></div>
+      </div>
+      <div class="contentContainer">
+        <button class="dropdown dropdownClose">
+          <div class="dropdownPainel">
+            <h1 class="dropdownH1">Início</h1>
+            <span class="dropdownSpan"></span>
+          </div>
+
+          <ul id="dropdown" class="dropdownItems">
+            <li value="0">Início</li>
+            <li value="1">Serviços</li>
+            <li value="2">Experiência</li>
+            <li value="3">Educação</li>
+          </ul>
+        </button>
+
+        <div class="textContent">
+          
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./projetos.js"></script>
+    <script type="module" src="./scene.js"></script>
+  </body>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@v0.174.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.174.0/examples/jsm/"
+      }
+    }
+  </script>
+</html>

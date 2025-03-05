@@ -1,0 +1,35 @@
+.deadpool-x-wolverine {
+  background: url("./images/dxw.png") no-repeat;
+  background-size: 100%;
+}
+
+.rank {
+  background: url("./images/rank.png") center no-repeat;
+  background-size: cover;
+}
+
+.ralph {
+  background: url("./images/ralph.png") bottom no-repeat;
+  background-size: 110% 80%;
+}
+
+.hbo {
+  background: url("./images/hbo.png") top no-repeat;
+  background-size: 100% 127%;
+}
+.gitfind {
+  background: url("./images/gitfind.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.nvidia {
+  background: url("./images/nvidia.png") top no-repeat;
+  background-size: 100% 160%;
+}
+.pokemon {
+  background: url("./images/pokemon.png") top no-repeat;
+  background-size: 100%;
+}
+.tictactoe {
+  background: url("./images/tictactoe.png") center no-repeat;
+  background-size: 110% 100%;
+}
