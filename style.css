@@ -180,6 +180,7 @@ main {
 }
 
 .curriculo {
+    width: 100%;
     border: 2px solid #fff;
     font-weight: 900;
     border-radius: .5rem;
@@ -194,6 +195,10 @@ main {
     background-color: #fff;
     color: #000;
     transition: background .25s linear, color .10s linear;
+}
+
+.curriculoLink {
+    width: 100%;
 }
 
 .servicesContainer {

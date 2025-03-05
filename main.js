@@ -31,7 +31,11 @@ function contentChange(texto) {
     const remainingDays = diffDays % 30;
 
     textContent.innerHTML = `
-        <button class="curriculo">Baixar Curriculo</button>
+          <a class="curriculoLink" href="https://yan-dmc.github.io/curriculo/" title="Baixar Curriculo" target="_blank">
+            <button class="curriculo">
+              Baixar Curriculo
+            </button>
+          </a>
           <div class="inicioText">
             <h1>Olá,</h1>
             <p>meu nome é Yan e sou um <strong>entusiasta apaixonado por novas tecnologias,</strong>  trabalho como programador Fullstack e Freelancer a ${diffYears} anos ${remainingMonths} meses ${remainingDays} dias</p>
